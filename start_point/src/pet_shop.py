@@ -31,4 +31,9 @@ def get_pets_by_breed(store_pets, name_breed):
             count_breed.append(pet["breed"])
     return count_breed
 
-  
+def find_pet_by_name(store_pets, name_pet):
+    for pet in store_pets["pets"]:
+        if pet["name"] == name_pet:
+            return pet
+
+
