@@ -12,10 +12,6 @@ def add_or_remove_cash(shop_cash, add_cash):
     shop_cash["admin"]["total_cash"] += add_cash
 
 
-def add_or_remove_cash(shop_cash, remove_cash):
-    shop_cash["admin"]["total_cash"] += remove_cash
-
-
 def get_pets_sold(shop_cash):
     return shop_cash["admin"]["pets_sold"]
 
@@ -28,3 +24,11 @@ def get_stock_count(store_pets):
     return len(store_pets["pets"])
 
 
+def get_pets_by_breed(store_pets, name_breed):
+    count_breed = []
+    for pet in store_pets["pets"]:
+        if pet["breed"] == name_breed:
+            count_breed.append(pet["breed"])
+    return count_breed
+
+  
