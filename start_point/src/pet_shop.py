@@ -69,3 +69,10 @@ def customer_can_afford_pet(name_customer, new_pet):
         return True
     else: 
         return False
+
+
+def sell_pet_to_customer(store_pets, pet, name_customer):
+        # return name_customer["pets"].append(pet)
+        # store_pets["admin"]["pets_sold"] += 1
+        # name_customer["cash"] -= pet["price"]
+        # store_pets["admin"]["total_cash"] += pet["price"]
