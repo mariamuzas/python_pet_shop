@@ -25,11 +25,15 @@ def get_stock_count(store_pets):
 
 
 def get_pets_by_breed(store_pets, name_breed):
-    count_breed = []
+    found_pet_by_breed = []
+    # pets = store_pets["pets"]
+    # for pet in pets:
     for pet in store_pets["pets"]:
         if pet["breed"] == name_breed:
-            count_breed.append(pet["breed"])
-    return count_breed
+            found_pet_by_breed.append(pet["breed"])
+                #it's adding the name of the breed to the list
+                #found_pet_by_breed.append(pet) -> this will add the dictionaries with the specific.
+    return found_pet_by_breed
 
 
 def find_pet_by_name(store_pets, name_pet):
@@ -71,8 +75,8 @@ def customer_can_afford_pet(name_customer, new_pet):
         return False
 
 
-def sell_pet_to_customer(store_pets, pet, name_customer):
-        # return name_customer["pets"].append(pet)
-        # store_pets["admin"]["pets_sold"] += 1
-        # name_customer["cash"] -= pet["price"]
-        # store_pets["admin"]["total_cash"] += pet["price"]
+# def sell_pet_to_customer(store_pets, pet, name_customer):
+#         # return name_customer["pets"].append(pet)
+#         # store_pets["admin"]["pets_sold"] += 1
+#         # name_customer["cash"] -= pet["price"]
+#         # store_pets["admin"]["total_cash"] += pet["price"]
